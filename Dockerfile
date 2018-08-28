@@ -10,6 +10,7 @@ RUN apk update && \
     apk add python && \
     apk add python-dev && \
     apk add git && \
+    apk add tzdata && \
     python -m ensurepip && \
     cp "/usr/share/zoneinfo/${TIMEZONE}" /etc/localtime && echo "${TIMEZONE}" > /etc/timezone && \
     rm -r /usr/lib/python*/ensurepip && \
