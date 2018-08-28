@@ -3,4 +3,4 @@
 [![This image on DockerHub](https://img.shields.io/docker/pulls/boomalien/alpine-python2.svg)](https://hub.docker.com/r/boomalien/alpine-python2/)
 
 
-multiarch alpine image with python2
+multiarch alpine base image with python2
