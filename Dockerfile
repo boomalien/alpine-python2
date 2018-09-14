@@ -1,5 +1,6 @@
 ARG arch=amd64
 FROM ${arch}/alpine:3.8
+COPY qemu-arm-static /usr/bin/qemu-arm-static
 LABEL maintainer="Oliver Mazur"
 LABEL Description="Python2 multi arch image. This Image uses alpine as base image"
 
