@@ -7,7 +7,7 @@ services:
 
 environment:
   matrix:
-    - ARCH: arm32v7
+    - ARCH: arm32v6
     - ARCH: arm64v8
     - ARCH: amd64
 
