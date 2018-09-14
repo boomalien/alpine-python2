@@ -2,11 +2,17 @@ version: 1.0.{build}
 image:
 - Ubuntu
 
+services:
+- docker
+
 environment:
   matrix:
     - ARCH: arm32v7
     - ARCH: arm64v8
     - ARCH: amd64
+
+install:
+  - sh: docker run --rm --privileged multiarch/qemu-user-static:register --reset
 
 build_script:
   - ps: ./build.ps1
