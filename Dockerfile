@@ -1,4 +1,5 @@
-FROM alpine:3.8
+ARG arch=amd64
+FROM ${arch}/alpine:3.8
 LABEL maintainer="Oliver Mazur"
 LABEL Description="Python2 multi arch image. This Image uses alpine as base image"
 
